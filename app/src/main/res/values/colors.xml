@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="ColorTitle">#f54245</color>
+    <color name="startButton">#34eb4c</color>
+    <color name="scoreButton">#f0d826</color>
+    <color name="scoreButtonSecond">#FFBF00</color>
+    <color name="scorePressed">#db8f1d</color>
+    <color name="scorePressedSecond">#dba51d</color>
+    <color name="achievFirstButton">#2698f0</color>
+    <color name="achievSecondButton">#2641f0</color>
+    <color name="achievPressed">#1d29d1</color>
+    <color name="achievPressedTwo">#2633f0</color>
+    <color name="menuStart">#D7FFFFFF</color>
+    <color name="menuSecond">#D7FFFFFF</color>
+    <color name="titles">#db8f1d</color>
+</resources>

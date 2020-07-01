@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Chemistry</string>
+    <string name="start">Start</string>
+    <string name="settings">Settings</string>
+    <string name="score">Highest Score</string>
+    <string name="achievement">Achievement</string>
+    <string name="title">Let\'s BURN IT</string>
+    <string name="topicsTitle">Choose the topic</string>
+    <string name="flameButton">Flames</string>
+    <string name="compoundButton">Compounds</string>
+    <string name="menu">Menu</string>
+    <string name="ScoreTitle">Your Scores:</string>
+    <string name="usernameTitle">Username:</string>
+    <string name="DateTitle">Date/Time:</string>
+    <string name="ScoreBoardTitle">Score:</string>
+    <string name="settingsTitle">Settings:</string>
+    <string name="musicSwitch">Music</string>
+    <string name="backgroundSwitch">Background</string>
+    <string name="soundSwitch">Sounds</string>
+    <string name="achievementTitle">Achievements: </string>
+    <string name="highScore">Achieve highest score: </string>
+    <string name="gameComplete">Complete game: </string>
+    <string name="gameStatus">Incomplete</string>]
+    <string name="FlamesCompletion">Complete Flames topic: </string>
+    <string name="FlamesStatus">Incomplete</string>
+    <string name="CompoundCompletion">Complete Compound topic: </string>
+    <string name="CompoundStatus">Incomplete</string>
+    <string name="FlamesLevelOne">Question One here</string>
+    <string name="StartFlame">Let\'s GO!!!</string>
+    <string name="Score">Score: </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

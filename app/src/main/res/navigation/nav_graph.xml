@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/start3">
+    <fragment
+        android:id="@+id/topics"
+        android:name="com.example.chemistry.Topics"
+        android:label="fragment_topics"
+        tools:layout="@layout/fragment_topics" >
+        <action
+            android:id="@+id/action_topics_to_flames"
+            app:destination="@id/flames" />
+        <action
+            android:id="@+id/action_topics_to_compounds"
+            app:destination="@id/compounds" />
+        <action
+            android:id="@+id/action_topics_to_start3"
+            app:destination="@id/start3" />
+    </fragment>
+    <fragment
+        android:id="@+id/start3"
+        android:name="com.example.chemistry.Start"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_start3_to_topics"
+            app:destination="@id/topics" />
+        <action
+            android:id="@+id/action_start3_to_score"
+            app:destination="@id/score" />
+        <action
+            android:id="@+id/action_start3_to_settings"
+            app:destination="@id/settings" />
+        <action
+            android:id="@+id/action_start3_to_achievements"
+            app:destination="@id/achievements" />
+    </fragment>
+    <fragment
+        android:id="@+id/score"
+        android:name="com.example.chemistry.Score"
+        android:label="fragment_score"
+        tools:layout="@layout/fragment_score" >
+        <action
+            android:id="@+id/action_score_to_start3"
+            app:destination="@id/start3" />
+    </fragment>
+    <fragment
+        android:id="@+id/achievements"
+        android:name="com.example.chemistry.Achievements"
+        android:label="fragment_achievements"
+        tools:layout="@layout/fragment_achievements" >
+        <action
+            android:id="@+id/action_achievements_to_start3"
+            app:destination="@id/start3" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.chemistry.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settings_to_start3"
+            app:destination="@id/start3" />
+    </fragment>
+    <fragment
+        android:id="@+id/compounds"
+        android:name="com.example.chemistry.Compounds"
+        android:label="fragment_compounds"
+        tools:layout="@layout/fragment_compounds" >
+        <action
+            android:id="@+id/action_compounds_to_compoundLevelOne"
+            app:destination="@id/compoundLevelOne" />
+    </fragment>
+    <fragment
+        android:id="@+id/flames"
+        android:name="com.example.chemistry.Flames"
+        android:label="fragment_flames"
+        tools:layout="@layout/fragment_flames" >
+        <action
+            android:id="@+id/action_flames_to_flamesLevelOne"
+            app:destination="@id/flamesLevelOne" />
+        <action
+            android:id="@+id/action_flames_to_start3"
+            app:destination="@id/start3" />
+    </fragment>
+    <fragment
+        android:id="@+id/compoundLevelFive"
+        android:name="com.example.chemistry.CompoundLevelFive"
+        android:label="fragment_compound_level_five"
+        tools:layout="@layout/fragment_compound_level_five" />
+    <fragment
+        android:id="@+id/compoundLevelFour"
+        android:name="com.example.chemistry.CompoundLevelFour"
+        android:label="fragment_compound_level_four"
+        tools:layout="@layout/fragment_compound_level_four" >
+        <action
+            android:id="@+id/action_compoundLevelFour_to_compoundLevelFive"
+            app:destination="@id/compoundLevelFive" />
+    </fragment>
+    <fragment
+        android:id="@+id/compoundLevelThree"
+        android:name="com.example.chemistry.CompoundLevelThree"
+        android:label="fragment_compound_level_three"
+        tools:layout="@layout/fragment_compound_level_three" >
+        <action
+            android:id="@+id/action_compoundLevelThree_to_compoundLevelFour"
+            app:destination="@id/compoundLevelFour" />
+    </fragment>
+    <fragment
+        android:id="@+id/compoundLevelOne"
+        android:name="com.example.chemistry.CompoundLevelOne"
+        android:label="fragment_compound_level_one"
+        tools:layout="@layout/fragment_compound_level_one" >
+        <action
+            android:id="@+id/action_compoundLevelOne_to_compoundLevelTwo"
+            app:destination="@id/compoundLevelTwo" />
+    </fragment>
+    <fragment
+        android:id="@+id/compoundLevelTwo"
+        android:name="com.example.chemistry.CompoundLevelTwo"
+        android:label="fragment_compound_level_two"
+        tools:layout="@layout/fragment_compound_level_two" >
+        <action
+            android:id="@+id/action_compoundLevelTwo_to_compoundLevelThree"
+            app:destination="@id/compoundLevelThree" />
+    </fragment>
+    <fragment
+        android:id="@+id/flamesLevelFive"
+        android:name="com.example.chemistry.FlamesLevelFive"
+        android:label="fragment_flames_level_five"
+        tools:layout="@layout/fragment_flames_level_five" />
+    <fragment
+        android:id="@+id/flamesLevelFour"
+        android:name="com.example.chemistry.FlamesLevelFour"
+        android:label="fragment_flames_level_four"
+        tools:layout="@layout/fragment_flames_level_four" >
+        <action
+            android:id="@+id/action_flamesLevelFour_to_flamesLevelFive"
+            app:destination="@id/flamesLevelFive" />
+    </fragment>
+    <fragment
+        android:id="@+id/flamesLevelOne"
+        android:name="com.example.chemistry.FlamesLevelOne"
+        android:label="fragment_flames_level_one"
+        tools:layout="@layout/fragment_flames_level_one" >
+        <action
+            android:id="@+id/action_flamesLevelOne_to_flamesLevelTwo"
+            app:destination="@id/flamesLevelTwo" />
+        <action
+            android:id="@+id/action_flamesLevelOne_to_start3"
+            app:destination="@id/start3" />
+    </fragment>
+    <fragment
+        android:id="@+id/flamesLevelThree"
+        android:name="com.example.chemistry.FlamesLevelThree"
+        android:label="fragment_flames_level_three"
+        tools:layout="@layout/fragment_flames_level_three" >
+        <action
+            android:id="@+id/action_flamesLevelThree_to_flamesLevelFour"
+            app:destination="@id/flamesLevelFour" />
+    </fragment>
+    <fragment
+        android:id="@+id/flamesLevelTwo"
+        android:name="com.example.chemistry.FlamesLevelTwo"
+        android:label="fragment_flames_level_two"
+        tools:layout="@layout/fragment_flames_level_two" >
+        <action
+            android:id="@+id/action_flamesLevelTwo_to_flamesLevelThree"
+            app:destination="@id/flamesLevelThree" />
+    </fragment>
+</navigation>
